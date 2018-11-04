@@ -11,6 +11,8 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    self.artists.name
+    artists = []
+    self.artists.each {|a| artists << a}
+    artists
   end
 end
