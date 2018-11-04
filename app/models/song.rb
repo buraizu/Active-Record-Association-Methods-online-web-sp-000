@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    return = self.artist.name
+    return_value = self.artist.name
     binding.pry
     self.artist
   end
